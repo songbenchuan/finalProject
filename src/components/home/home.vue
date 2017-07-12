@@ -39,7 +39,32 @@
       </ul>
     </div>
     <div class="swipper-container">
-      <img src="./924590309cb749fabf810a832a402984_d1242x0.jpg" alt="">
+      <mt-swipe :auto="4000">
+        <mt-swipe-item>
+          <img src="./924590309cb749fabf810a832a402984_d1242x0.jpg" alt="">
+        </mt-swipe-item>
+        <mt-swipe-item>
+          <img src="./b074f4f091d44569acdd9d001cd4e0b5_d1242x0.jpg" alt="">
+        </mt-swipe-item>
+        <mt-swipe-item>
+          <img src="./e0f30fd934134d28ad9c5c45f96c7045_d1242x0.jpg" alt="">
+        </mt-swipe-item>
+        <mt-swipe-item>
+          <img src="./85f5aea681ab4e98b72f1d59b9a5b073_d1242x0.jpg" alt="">
+        </mt-swipe-item>
+        <mt-swipe-item>
+          <img src="./dd0e77b30b7a4457ad4bff10a5ef028e_d1242x0.jpg" alt="">
+        </mt-swipe-item>
+        <mt-swipe-item>
+          <img src="./09c6c6a15c2d48d19a03b473a7c3764a_d1242x0.jpg" alt="">
+        </mt-swipe-item>
+        <mt-swipe-item>
+          <img src="./a33813da3f924276a6cff34312ad587d_d1242x0.jpg" alt="">
+        </mt-swipe-item>
+        <mt-swipe-item>
+          <img src="./e234e5b64ab1456c9345dc8a4d604fb2_d1242x0.jpg" alt="">
+        </mt-swipe-item>
+      </mt-swipe>
     </div>
     <div class="img-wrapper img-wrapper1">
       <img src="./b6b9a0221e3b47b7a92b36201272f9e6_d1242x0.jpg" alt="">
@@ -67,6 +92,8 @@
 
 <script>
 
+  import { Swipe, SwipeItem } from 'mint-ui';
+
   export default {
 
   }
@@ -81,6 +108,7 @@
     right: 0;
     width: auto;
     height: 4rem;
+    z-index 100
     .header-image
       height: 4rem;
       background-repeat no-repeat
@@ -129,8 +157,14 @@
     width 100%
     height 250px
     margin-top 96px
-    img
-      width 100%
+    .mint-swipe-item
+      img
+        width 100%
+    .mint-swipe-indicator
+      background white !important
+      opacity .95 !important
+    .is-active
+      background: #89be48!important
   .img-wrapper
     width 100%
     margin-bottom 1rem

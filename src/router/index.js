@@ -5,6 +5,8 @@ import all from '../components/all/all.vue'
 import stroll from '../components/stroll/stroll.vue'
 import cart from '../components/cart/cart.vue'
 import usercenter from '../components/usercenter/usercenter.vue'
+import login from '../components/login/login.vue'
+import register from '../components/register/register.vue'
 import MintUI from 'mint-ui'
 
 Vue.use(MintUI)
@@ -36,6 +38,14 @@ export default new Router({
     {
       path: '/usercenter',
       component: usercenter
+    },
+    {
+      path: '/login',
+      component: login
+    },
+    {
+      path: '/register',
+      component: register
     }
   ]
 })

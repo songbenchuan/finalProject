@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 
 import './common/stylus/fonts.styl'
+import 'mint-ui/lib/style.css'
 
 
 /* eslint-disable no-new */
